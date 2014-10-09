@@ -1,0 +1,1 @@
+Here goes html and css code for admin part.

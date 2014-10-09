@@ -1,0 +1,1 @@
+Here goes html and css for front-end part.
