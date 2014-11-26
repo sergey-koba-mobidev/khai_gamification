@@ -15,7 +15,7 @@ class Groups extends \App\Page {
 
      public function action_getList() {
 
-    	$result = $pixie->orm->get('group')->find_all();
+    	$result = $pixie->orm->get('group')->find_all()->as_array(true);
     	return json_encode($result);
  		die();
     }
