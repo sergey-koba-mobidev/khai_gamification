@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="../js/jquery.listen.js"></script>
+<script type="text/javascript" src="../js/underscore-min.js"></script>
+<title>GameStudy</title>
+<link media="screen" href="../style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div align="center">
+<div id='wrapper'>
+	<div id='header'>
+		<div class="tab_head">
+			<div class="head">
+				<div class="logo">
+					<a href="/"><img src="../img/logo.png" border="0" alt=" " /></a>
+				</div>
+				<div class="h1">
+					<form action="">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td valign="top">
+						<input type="image" src="../img/s1.png" class="s1" />
+								</td>
+								<td valign="top">
+						<input type="text" name="text" value="" placeholder="Поиск" class="s2" />
+								</td>
+								<td>
+						<img src="../img/s3.png" width="7px" height="22px" border="0" alt=" " />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="h2">
+					<a href="/">Главная</a>
+				</div>
+				<div class="h3">
+					<a href="#mail"><span class="flag"><span class="number_mail">3</span></span></a>
+				</div>
+				<div class="h4">
+					<div class="ava1"></div>
+					<div class="ava2"><a href="#type"><span class="name"></span></a></div>
+				</div>
+			</div>
+			<div align="center" class="foto_group">
+			</div>
+
+		</div>
+	</div>
+	<div id='container'>
+		<div class="padding_foto">
+			<div class="backg">
+				<div class="podl">
+				<table border="0" cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td valign="top" width="400" align="left">
+					<div class="name_group"></div>
+					<div class="name_univer"></div>
+					<div class="bl1">Город</div><div class="bl2"><div id="citys"></div></div>
+					<div class="clear"></div>
+					<div class="bl1">Кафедра</div><div class="bl2"><div id="depart"></div></div>
+					<div class="clear"></div>
+					<div class="bl1">Специальность</div><div class="bl2"><div id="discipline"></div></div>
+					<div class="clear"></div>
+					<div class="bl1">Студенты</div><div class="bl2"><div id="count_st"></div></div>
+					<div class="clear"></div>
+					<div class="bl1">Староста</div><div class="bl2"><a href="#"><div id="starosta"></div></a></div>
+					<div class="clear"></div>
+						</td>
+						<td valign="top" width="430">
+					<div align="left" class="best">Лучшие студенты</div>
+					<div id="bestBlock">
+        			</div>
+					<div class="clear"></div>
+						</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="podl" align="left">
+			<div class="name_group_old" align="left">
+			</div>
+
+			<div id="otherBlock">
+	        </div>
+
+			<div class='clear'></div>
+		</div>
+	</div>
+	<div class='clear'></div>
+	<div id='footer'>
+		<div class="bg_f">
+			<div class="bg_footer">
+				<div class="footer_nav">
+					<div class="nav1" align="left">О нас
+						<ul>
+							<li><a href="#">О Геймстади</a></li>
+							<li><a href="#">Наша миссия</a></li>
+							<li><a href="#">Наша комманда</a></li>
+						</ul>
+					</div>
+					<div class="nav2" align="left">Геймстади
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Вузы</a></li>
+							<li><a href="#">Группы</a></li>
+							<li><a href="#">Предметы</a></li>
+						</ul>
+					</div>
+					<div class="nav3" align="left">Рейтинг
+						<ul>
+							<li><a href="#">Рейтинг студентов</a></li>
+							<li><a href="#">Рейтинг вузов</a></li>
+							<li><a href="#">Группы</a></li>
+							<li><a href="#">Рейтинг групп</a></li>
+						</ul>
+					</div>
+					<div class="nav4" align="center">
+						<a href="/"><img src="../img/logo.png" border="0" alt=" " /></a>
+						<div class="copy">&copy; Геймстади, 2014</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+
+<script type="text/template" id="ratingTemplate">
+<div class="thebest">
+	<div class="foto_student">
+		<img src="../<%- photo %>" width="127px" height="128px" border="0" alt=" " />
+		<div class="number_r"><%- rating%></div>
+	</div>
+	<div class="name_st"><a href="#"><%- name %> <%- surname %></a></div>
+</div>
+</script>
+
+<script type="text/template" id="allTemplate">
+<div class="thebest_r">
+	<div class="foto_student">
+		<img src="../<%- photo %>" width="127px" height="128px" border="0" alt=" " />
+		<div class="number_l"><%- rating%></div>
+	</div>
+	<div class="name_st"><a href="#"><%- surname %> <%- name %></a></div>
+</div>
+</script>
+
+<script type="text/javascript" id="grPhotoTemp">
+	<img src="../<%- photo %>" width="821px" height="270px" border="0" alt=" " />
+</script>
+
+<script type="text/javascript" src="../js/front-raiting.js"></script>
+</html>

@@ -1,0 +1,44 @@
+{  
+   "students":[  
+      {  
+         "id":1,
+         "name":"\u0412\u0430\u0441\u044f",
+         "surname":"\u041f\u0443\u043f\u043e\u0447\u043a\u0438\u043d",
+         "rating":33,
+         "photo":"test.jpg"
+      },
+      {  
+         "id":3,
+         "name":"\u0412\u0430\u0441\u044f2",
+         "surname":"\u041f\u0443\u043f\u043e\u0447\u043a\u0438\u043d2",
+         "rating":22,
+         "photo":"test2.jpg"
+      }
+   ],
+   "groups":[  
+      {  
+         "id":21,
+         "name":"126\u0441\u0442",
+         "faculty":"\u0421\u0430\u043c\u043e\u043b\u0435\u0442\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439",
+         "rating":133
+      }
+   ],
+   "universities":[  
+      {  
+         "id":3,
+         "full_name":"\u0425\u0410\u0418",
+         "city":"\u0425\u0430\u0440\u044c\u043a\u043e\u0432",
+         "rating":1332
+      }
+   ]
+}
+
+{
+"valid":"N",
+"err":{
+	"reg_captcha":"Введён неверный код",
+	"user2[LOGIN]":"Логин существует. Введите другой.",
+	"user2[EMAIL]":"поле \"E-mail\" не заполнено!",
+	"user2[WORK_COMPANY]":"Не указано название отеля!"
+	}
+}
